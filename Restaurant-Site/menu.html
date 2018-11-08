@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<!--
+    Name: Matt Jirik
+    Date Created: 10/28/18
+    Most recent revision:
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1 shrink-to-fit=no" />
+
+    <title>Menu</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/restaurantStyles.css" type="text/css" />
+
+    <style>
+        .menu-item {
+            text-align: center;
+            float: left;
+            padding: 10px;
+        }
+
+        .item-name {
+            font-weight: 700;
+            font-size: 1.25em;
+        }
+
+        .item-description {
+            font-size: 1em;
+        }
+
+        .clear-float {
+            clear: both;
+        }
+
+        body {
+            background-color: #1e2b20;
+            color: #e8dede;
+        }
+
+        .container {
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <noscript>
+        This website is best viewed in browsers with JavaScript enabled
+    </noscript>
+    <div class="cover-container">
+        <header>
+            <h1 class="name">Tom's Bistro</h1>
+            <h4 class="announcement">Check out our new location in Snerling!</h4>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <nav>
+                            <a class="btn badge-pill" href="index.html"><i class="fas fa-home"></i></a>   <a class="btn badge-pill" href="menu.html">Menu</a>    <a class="btn badge-pill" href="contact-us.html">Contact Us</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="menu-item col-4">
+                    <div class="item-name">Burger and Fries</div>
+                    <div class="item-description">
+                        An American Classic!<br />
+                        Your choice - with or without cheese<br />
+                        Pickle, onion, tomato, and lettuce<br />
+                        Served with our famous thick cut french fries<br />
+                        $7.95
+                    </div>
+                </div>
+
+                <div class="menu-item col-4">
+                    <div class="item-name">Hot Dog and Chips</div>
+                    <div class="item-description">
+                        A Summer Classic!<br />
+                        Your choice - white or wheat bun<br />
+                        Relish, mustard, and ketchup<br />
+                        Served with our house-made chips<br />
+                        $7.95
+                    </div>
+                </div>
+
+                <div class="menu-item col-4">
+                    <div class="item-name">Italian Sausage and Peppers</div>
+                    <div class="item-description">
+                        An All-Time Favorite!<br />
+                        Your choice - mild or spicy<br />
+                        Cole Slaw<br />
+                        Served with garlic mashers<br />
+                        $10.95
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="menu-item col-3">
+                    <div class="item-name">Tenderloin Sandwich and Chips</div>
+                    <div class="item-description">
+                        Really Hits the Spot!<br />
+                        Plain or Sesame Seed Bun<br />
+                        Pickle, onion, tomato, and lettuce<br />
+                        Served with our house-made chips<br />
+                        $8.95
+                    </div>
+                </div>
+
+                <div class="menu-item col-3">
+                    <div class="item-name">House Salad</div>
+                    <div class="item-description">
+                        On the Lighter Side<br />
+                        Your choice - with or without cheese<br />
+                        Iceberg lettuce, tomatoes, peppers<br />
+                        Thousand Island or Ranch Dressing<br />
+                        Served with a dinner roll<br />
+                        $6.95
+                    </div>
+                </div>
+
+                <div class="menu-item col-3">
+                    <div class="item-name">Brisket Sandwich and Fries</div>
+                    <div class="item-description">
+                        Taste of Texas!<br />
+                        Smoked Brisket on thick-cut Texas Toast<br />
+                        Cole Slaw<br />
+                        Served with our famous thick-cut french fries<br />
+                        $7.95
+                    </div>
+                </div>
+
+                <table class="table table-striped col-3">
+                    <thead>
+                        <tr>
+                            <th scope="col">Beverages</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Root Beer</td>
+                            <td>$3.00</td>
+                        </tr>
+                        <tr>
+                            <td>Bottled Water</td>
+                            <td>$1.25</td>
+                        </tr>
+                        <tr>
+                            <td>Lemonade</td>
+                            <td>$1.00</td>
+                        </tr>
+                        <tr>
+                            <td>Iced Tea</td>
+                            <td>$1.25</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <hr />
+        6412 12th Ave, Pawnee, IN 99999
+        555-428-7373
+    </footer>
+    <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
