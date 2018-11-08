@@ -1,4 +1,8 @@
-// JavaScript source code
+/*
+    Name: Matt Jirik
+    Date Created: 11/7/18
+    Most recent revision: 11/7/18
+*/
 function clearErrors() {    
     for (var loopCounter = 0; 
         loopCounter < document.forms["bet"].elements.length; 
