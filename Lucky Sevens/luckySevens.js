@@ -40,17 +40,20 @@ var highest = 0.00;
 var highestRoll = 0;
 
 function gamble(bet) {
-    highest = bet;
+    var winnings = 0;
+    var remaining = bet;
     while (bet > 0) {
         var result = rollDice();
         rolls++;
         if (result == 7) {
-            bet += 4;
-            if (bet > highest) {
-                highest = bet;
+            winnings += 4;
+            bet +=4;
+            if (winnings > highest) {
+                highest = winnings;
                 highestRoll = rolls;
             }
         } else {
+            winnings -=1;
             bet -= 1;
         }
     }
@@ -77,7 +80,11 @@ function validateItems() {
     document.getElementById("betResult").innerText = betInput;
     document.getElementById("rollsResult").innerText = rolls;
     document.getElementById("highestResult").innerText = highest;
-    document.getElementById("highestRollResult").innerText = highestRoll;
+    if(highestRoll!=0){
+        document.getElementById("highestRollResult").innerText = highestRoll;
+    } else {
+        document.getElementById("highestRollResult").innerText = "Never broke even";
+    }
     // We are returning false so that the form doesn't submit 
     // and so that we can see the results
     return false;
